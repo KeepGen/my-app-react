@@ -21,11 +21,11 @@ const Counter = () => {
 	};
 
 	return (
-		<>
+		<div>
 			<span className={getBadgeClasses()}>{formatCount()}</span>
 			<button className='btn btn-primary btn-sm m-2' onClick={handleIncrement}>+</button>
 			<button className='btn btn-primary btn-sm m-2' onClick={handleDecrement}>-</button>
-		</>
+		</div>
 	);
 };
 
