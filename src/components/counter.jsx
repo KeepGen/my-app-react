@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 
 const Counter = (props) => {
-	console.log(props);
 	const [value, setValue] = useState(props.value);
 
 	const formatValue = () => {

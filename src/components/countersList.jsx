@@ -18,10 +18,8 @@ const CountersList = () => {
 			{counters.map((count) => (
 				<Counter
 					key={count.id}
-					id={count.id}
-					value={count.value}
-					name={count.name}
 					onDelete={handleDelete}
+					{...count}
 				/>))}
 		</>
 	);
