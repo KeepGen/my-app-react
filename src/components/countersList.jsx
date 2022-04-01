@@ -17,16 +17,6 @@ const CountersList = () => {
 	const handleReset = () => {
 		setCounters(initialState);
 	}
-	const handleUpdate = () => {
-		const updatedState = [
-			{id: 0, value: 4, name: 'Нож'},
-			{id: 1, value: 4, name: 'Ложка'},
-			{id: 2, value: 4, name: 'Вилка'},
-			{id: 3, value: 4, name: 'Тарелка'},
-			{id: 4, value: 0, name: 'Чашка'}
-		];
-		setCounters(updatedState);
-	}
 	return (
 		<>
 			{counters.map((count) => (
@@ -36,7 +26,6 @@ const CountersList = () => {
 					{...count}
 				/>))}
 			<button className="btn btn-primary btn-sm m-2" onClick={handleReset}>Reset</button>
-			<button className="btn btn-primary btn-sm m-2" onClick={handleUpdate}>Show Origin</button>
 		</>
 	);
 };
