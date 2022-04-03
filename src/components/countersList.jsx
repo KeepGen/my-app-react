@@ -19,16 +19,8 @@ const CountersList = () => {
 		setCounters(initialState);
 	}
 	const handleIncrement = (id) => {
-		const findItem = newCountersArray.find(counter => counter.id === id);
-		console.log('FIND: item: ', findItem);
-		console.log('FIND: id: ', id);
-		console.log('FIND: item.value ', findItem.value);
-		findItem.value++
-		console.log('FIND: Item.value ', findItem.value);
-		// setCounters(findItem);
-
-		// newCountersArray[id].value++
-		// setCounters(newCountersArray);
+		newCountersArray[id].value++
+		setCounters(newCountersArray);
 	}
 	const handleDecrement = (id) => {
 		if (newCountersArray[id].value > 0) {
